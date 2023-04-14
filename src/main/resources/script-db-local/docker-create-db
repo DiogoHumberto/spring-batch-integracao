@@ -1,0 +1,11 @@
+-- create docker postgre DB docker
+docker run --name db-postgres -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=bach-integracao -d -p 5432:5432 library/postgres
+
+-- acess DB in line 
+docker exec -ti db-postgres sh
+
+-- acess postgre
+psql -d postgres -U postgres
+
+-- verify db create 
+SELECT datname FROM pg_database;
