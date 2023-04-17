@@ -1,0 +1,20 @@
+good  -> https://gustavopeiretti.com/how-to-create-an-application-with-spring-batch/
+
+Spring Batch 5.0 - https://www.youtube.com/watch?v=Jzf9ofPy_xk
+
+https://giuliana-bezerra.medium.com/tolerancia-a-falhas-com-retry-no-spring-batch-786db305ec13
+
+
+https://gustavopeiretti.com/how-to-create-an-application-with-spring-batch/
+
+https://github.com/giuliana-bezerra/sb-transactions
+
+https://github.com/giuliana-bezerra/sb-transactions/blob/main/src/main/java/com/example/transactionsmultiplesdbs/BatchConfig.java
+
+https://www.youtube.com/watch?v=1XEX-u12i0A
+
+
+
+
+
+
