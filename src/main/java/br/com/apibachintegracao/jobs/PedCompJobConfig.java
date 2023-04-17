@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.config;
+package br.com.apibachintegracao.jobs;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -14,9 +14,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
-import br.com.apibachintegracao.jobs.PedCompItemWriter;
 import br.com.apibachintegracao.jobs.listener.PedCompJobExecutionListener;
 import br.com.apibachintegracao.jobs.processor.PedCompProcessor;
+import br.com.apibachintegracao.jobs.writer.PedCompItemWriter;
 import br.com.apibachintegracao.models.PedCompModel;
 import jakarta.persistence.EntityManagerFactory;
 

@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.jobs;
+package br.com.apibachintegracao.jobs.writer;
 
 import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
