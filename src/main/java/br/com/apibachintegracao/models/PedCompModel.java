@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.model;
+package br.com.apibachintegracao.models;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.model;
+package br.com.apibachintegracao.models;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
