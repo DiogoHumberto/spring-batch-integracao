@@ -6,6 +6,7 @@ spring:
   datasource:
     url: ${DATABASE.URL}
   jpa:
+    open-in-view: false
     properties:
       hibernate:
         jdbc:

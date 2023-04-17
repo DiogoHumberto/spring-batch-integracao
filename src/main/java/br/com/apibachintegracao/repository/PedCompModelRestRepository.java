@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.repositories;
+package br.com.apibachintegracao.repository;
 
 import java.util.List;
 import java.util.UUID;
@@ -10,7 +10,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import br.com.apibachintegracao.models.PedCompModel;
 
 @RepositoryRestResource(collectionResourceRel = "listPedComp", path = "listPedComp")
-public interface  PedCompModelRepository extends PagingAndSortingRepository<PedCompModel, UUID> {
+public interface  PedCompModelRestRepository extends PagingAndSortingRepository<PedCompModel, UUID> {
 	
 	List<PedCompModel> findByNumpedcomp(@Param("numpedcomp") String numpedcomp);
  
