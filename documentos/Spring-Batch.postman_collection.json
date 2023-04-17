@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "deaff1e1-d7d1-404b-8f00-841608b71061",
+		"name": "Spring-Batch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24090580"
+	},
+	"item": [
+		{
+			"name": "Data-rest",
+			"item": [
+				{
+					"name": "consulta especifica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/listPedComp/search/findByNumpedcomp?numpedcomp=151",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"listPedComp",
+								"search",
+								"findByNumpedcomp"
+							],
+							"query": [
+								{
+									"key": "numpedcomp",
+									"value": "151"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conslta generica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/listPedComp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"listPedComp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
