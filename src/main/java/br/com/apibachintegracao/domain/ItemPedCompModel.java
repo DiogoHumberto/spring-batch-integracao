@@ -1,8 +1,11 @@
-package br.com.apibachintegracao.models;
+package br.com.apibachintegracao.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.UUID;
+
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -17,6 +20,7 @@ import lombok.Setter;
 @Table(name="item_pedcomp")
 @Getter
 @Setter
+@Audited
 public class ItemPedCompModel  implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -25,19 +29,21 @@ public class ItemPedCompModel  implements Serializable{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "uuid_itempedcomp")
 	private UUID uuidItemPedComp;
-	
-	@Column(name = "empresa")
-	private UUID empresa;
-	
-	@Column(name = "numpedcomp")
-	private Integer numpedcomp;
-			
+
 	@Column(name = "codprod")
 	private String codprod;
 	
+	@Column(name = "numpedcomp")
+	private Integer numpedcomp;
+
+	@Column(name = "uiid_empresa")
+	private UUID empresa;	
+	
+	@NotAudited
 	@Column(name = "descricao", columnDefinition = "TEXT")
 	private String descricao;
-
+	
+	@NotAudited
 	@Column(name = "unidade_medida")
 	private String unidadeMedida;
 	

@@ -7,7 +7,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import br.com.apibachintegracao.models.PedCompModel;
+import br.com.apibachintegracao.domain.PedCompModel;
 
 @RepositoryRestResource(collectionResourceRel = "listPedComp", path = "listPedComp")
 public interface  PedCompModelRestRepository extends PagingAndSortingRepository<PedCompModel, UUID> {

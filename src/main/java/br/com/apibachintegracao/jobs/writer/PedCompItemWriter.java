@@ -4,7 +4,7 @@ import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import br.com.apibachintegracao.models.PedCompModel;
+import br.com.apibachintegracao.domain.PedCompModel;
 import br.com.apibachintegracao.repository.PedCompModelRepository;
 
 public class PedCompItemWriter implements ItemWriter<PedCompModel>{

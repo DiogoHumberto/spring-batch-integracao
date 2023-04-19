@@ -1,7 +1,9 @@
-package br.com.apibachintegracao.models;
+package br.com.apibachintegracao.domain;
 
 import java.io.Serializable;
 import java.util.UUID;
+
+import org.hibernate.envers.Audited;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -17,6 +19,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name="empresa", uniqueConstraints = @UniqueConstraint(columnNames = "cnpj"))
+@Audited
 public class EmpresaModel implements Serializable {
 	
 	/**

@@ -1,10 +1,12 @@
-package br.com.apibachintegracao.models;
+package br.com.apibachintegracao.domain;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,6 +30,7 @@ import lombok.Setter;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Audited
 public class PedCompModel {
 	
 	@Id
@@ -62,6 +65,7 @@ public class PedCompModel {
 	@Column(name = "vljuros")
 	private BigDecimal vlJuros;
 	
+	@NotAudited
 	@Column(name = "descricao", columnDefinition = "TEXT")
 	private String descricao;
 	
