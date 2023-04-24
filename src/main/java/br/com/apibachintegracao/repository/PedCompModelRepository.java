@@ -1,5 +1,6 @@
 package br.com.apibachintegracao.repository;
 
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -9,4 +10,5 @@ import br.com.apibachintegracao.domain.PedCompModel;
 
 public interface PedCompModelRepository extends RevisionRepository<PedCompModel, UUID, Integer> , JpaRepository <PedCompModel, UUID> {
 
+	Optional<PedCompModel> findByNumpedcomp(Integer numpedcomp);
 }
