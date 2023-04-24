@@ -1,7 +1,7 @@
 package br.com.apibachintegracao.domain;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -42,19 +42,19 @@ public class PedCompModel {
 	private Integer numpedcomp;
 		
 	@Column(name = "dtpedido")
-	private LocalDateTime dtPedido;
+	private Date dtPedido;
 	
 	@Column(name = "dtinclusao")
-	private LocalDateTime dtInclusao;
+	private Date dtInclusao;
 	
 	@Column(name = "dtalteracao")
-	private LocalDateTime dtAlteracao;
+	private Date dtAlteracao;
 	
 	@Column(name = "dtcancelamento")
-	private LocalDateTime dtCancelamento;
+	private Date dtCancelamento;
 	
 	@Column(name = "dtentrega")
-	private LocalDateTime dtEntrega;
+	private Date dtEntrega;
 	
 	@Column(name = "vltotal")
 	private BigDecimal vlTotal;

@@ -1,10 +1,14 @@
 package br.com.apibachintegracao.dto;
 
 import java.math.BigDecimal;
+import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,14 +24,18 @@ import lombok.Setter;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PedCompDto {
 	
+	private UUID uuidPedcomp;
+	
 	@NotNull
 	private Integer numpedcomp;
 	
 	@NotNull
-	private String dtEntrega;
+	@JsonFormat(pattern="dd-MM-yyyy HH:mm:ss")
+	private Date dtEntrega;
 	
 	@NotNull
-	private String dtPedido;
+	@JsonFormat(pattern="dd-MM-yyyy HH:mm:ss")
+	private Date dtPedido;
 	
 	@NotNull
 	private BigDecimal vlTotal;
@@ -47,7 +55,7 @@ public class PedCompDto {
 	@NotNull
 	private String cnpjFornecedor;
 	
-	
-	//private List<ItemPedCompDto> itens;
+	@NotEmpty
+	private List<ItemPedCompDto> itens;
 
 }
