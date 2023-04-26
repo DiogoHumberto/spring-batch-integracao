@@ -3,6 +3,9 @@ server:
   port: '9000'
 
 spring:
+  batch:
+    jdbc:
+      initialize-schema: ALWAYS
   datasource:
     url: ${DATABASE.URL}
   jpa:
