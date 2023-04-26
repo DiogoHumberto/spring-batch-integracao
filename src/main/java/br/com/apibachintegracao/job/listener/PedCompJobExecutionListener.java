@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.jobs.listener;
+package br.com.apibachintegracao.job.listener;
 
 import org.springframework.batch.core.BatchStatus;
 import org.springframework.batch.core.JobExecution;

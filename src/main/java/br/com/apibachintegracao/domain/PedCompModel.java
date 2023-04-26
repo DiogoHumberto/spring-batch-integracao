@@ -66,7 +66,7 @@ public class PedCompModel {
 	@Column(name = "vljuros")
 	private BigDecimal vlJuros;
 	
-	@NotAudited
+	//@NotAudited
 	@Column(name = "descricao", columnDefinition = "TEXT")
 	private String descricao;
 	

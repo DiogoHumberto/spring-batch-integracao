@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.jobs.processor;
+package br.com.apibachintegracao.job.processor;
 
 import org.springframework.batch.item.ItemProcessor;
 

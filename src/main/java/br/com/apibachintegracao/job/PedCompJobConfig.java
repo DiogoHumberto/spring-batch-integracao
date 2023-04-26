@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.jobs;
+package br.com.apibachintegracao.job;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -13,9 +13,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import br.com.apibachintegracao.domain.PedCompModel;
-import br.com.apibachintegracao.jobs.listener.PedCompJobExecutionListener;
-import br.com.apibachintegracao.jobs.processor.PedCompProcessor;
-import br.com.apibachintegracao.jobs.writer.PedCompItemWriter;
+import br.com.apibachintegracao.job.listener.PedCompJobExecutionListener;
+import br.com.apibachintegracao.job.processor.PedCompProcessor;
+import br.com.apibachintegracao.job.writer.PedCompItemWriter;
 import jakarta.persistence.EntityManagerFactory;
 
 @Configuration
@@ -30,8 +30,8 @@ public class PedCompJobConfig {
 	
 		
     @Bean
-    public Job myJob(JobRepository jobRepository, Step step) {
-        return new JobBuilder("myJob", jobRepository)
+    public Job integraPedidoNovoJob(JobRepository jobRepository, Step step) {
+        return new JobBuilder("integraPedidoNovoJob", jobRepository)
                 .start(step)
                 //.incrementer(new RunIdIncrementer())
                 .listener(new PedCompJobExecutionListener())
