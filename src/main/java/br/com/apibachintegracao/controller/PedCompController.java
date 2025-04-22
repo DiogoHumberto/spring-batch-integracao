@@ -20,7 +20,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/api/pedido")
+@RequestMapping("api/pedido")
 @RequiredArgsConstructor
 public class PedCompController {
 

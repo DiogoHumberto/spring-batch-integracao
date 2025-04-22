@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.domain.mapper;
+package br.com.apibachintegracao.mapper;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package br.com.apibachintegracao.domain.mapper;
+package br.com.apibachintegracao.mapper;
 
 import br.com.apibachintegracao.domain.PedCompModel;
 import br.com.apibachintegracao.dto.PedCompDto;

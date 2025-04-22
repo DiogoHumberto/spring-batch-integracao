@@ -3,6 +3,9 @@ server:
   port: '9000'
 
 spring:
+  data:
+    rest:
+      base-path: /resource
   batch:
     jdbc:
       initialize-schema: ALWAYS
@@ -12,9 +15,22 @@ spring:
     open-in-view: false
     properties:
       hibernate:
+        show-sql: false
         jdbc:
           lob:
             non_contextual_creation: 'true'
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+
+logging:
+  level:
+    org:
+      hibernate:
+        envers:
+          boot: OFF
+        SQL: OFF
+        type:
+          descriptor:
+            sql:
+              BasicBinder: OFF

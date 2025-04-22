@@ -1,5 +1,6 @@
 package br.com.apibachintegracao.domain;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 import jakarta.persistence.Column;
@@ -23,7 +24,7 @@ import lombok.Setter;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class IntegraPedCompModel {
+public class IntegraPedCompModel implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

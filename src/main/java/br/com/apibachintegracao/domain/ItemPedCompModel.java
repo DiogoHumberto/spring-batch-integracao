@@ -29,8 +29,6 @@ import lombok.Setter;
 @Audited
 public class ItemPedCompModel  implements Serializable{
 
-	private static final long serialVersionUID = 1L;
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "uuid_itempedcomp")
